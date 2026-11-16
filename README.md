@@ -59,7 +59,3 @@ pytest -q
 ```
 
 Hay siete pruebas verificables: dos de validación Pydantic, dos de herramienta segura, una de RAG y dos de routing/trazas de nodos. Cada nodo agrega un evento estructurado con nombre, fecha y detalle; el resultado del trabajo devuelve esas trazas locales y el checkpoint las conserva. LangSmith queda configurado por entorno. No se afirma que existan trazas remotas: se requieren credenciales `LANGSMITH_API_KEY` y una ejecución del sistema para visualizarlas.
-
-## Origen y auditoría
-
-La inspección real y el detalle de reutilización de las entregas 1–7 están en [AUDITORIA_ENTREGAS.md](AUDITORIA_ENTREGAS.md). En particular, el grafo se refactorizó de Entrega 6 y la capa API/Redis/worker de Entrega 7.
